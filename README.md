@@ -5,7 +5,7 @@ This is my 4th project in the Udacity's FrontEnd Nanodegree Program. It uses the
 
 ## Tools
 - Node .You can download it [**here**](https://nodejs.org/en/download/).
-- MeaningCloud API key: [MeaningCloud](https://www.meaningcloud.com/). T
+- MeaningCloud API key: [MeaningCloud](https://www.meaningcloud.com/). 
 
 After you have gotten your API key, make a file called *.env* in the project root folder and insert the following line below
 
