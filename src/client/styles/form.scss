@@ -1,0 +1,30 @@
+$color: #52a1d8;
+$font: 25px;
+.intro{
+    padding: 20px;
+    font-size: $font;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+
+    input{
+        padding: 10px 10px;
+        width: 70%;
+        font-size: 1.3em;
+        margin: 10px 0;
+    }
+
+    input[type=submit]{
+        width: 70%;
+        background-color: $color;
+        cursor: pointer;
+    }
+
+}

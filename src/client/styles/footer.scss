@@ -1,0 +1,17 @@
+$color: #ccc;
+$font: 25px;
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: $font;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: $color;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 2em;
+    text-align: center;
+}
