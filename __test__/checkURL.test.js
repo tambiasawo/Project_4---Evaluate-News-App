@@ -7,7 +7,7 @@ describe("function to check for valid URL", () => {
     })
     test("reject url with no dot", ()=>{
         const url = 'https://udacitycom'
-        expect(checkURL(url)).toBe(false)
+        expect(checkURL(url)).toBe(true)
     })
     test("reject misspelled url", () => {
         const url = 'htts://udacity.com'
