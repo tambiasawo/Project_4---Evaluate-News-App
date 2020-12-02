@@ -17,10 +17,11 @@ export async function handleSubmit(event) {
     } 
     else {   
         getServerData('http://localhost:8080/call', inputData)
+            .then(result => result.json())
             .then(function (res) {
                 updateUI(res)
             })
-        }
+        
 }
 
 export async function getServerData(url, inputData) {
@@ -33,8 +34,7 @@ export async function getServerData(url, inputData) {
         },
         body: inputData,
     })
-    const returnedData = await response.json()
-    return returnedData
+    return response
 }
 
 // Updates the UI 
