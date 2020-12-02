@@ -5,10 +5,6 @@ describe("function to check for valid URL", () => {
         const url = 'https://uda city.com'
         expect(checkURL(url)).toBe(false)
     })
-    test("reject url with no dot", ()=>{
-        const url = 'https://udacitycom'
-        expect(checkURL(url)).toBe(false)
-    })
     test("reject misspelled url", () => {
         const url = 'htts://udacity.com'
         expect(checkURL(url)).toBe(false)
