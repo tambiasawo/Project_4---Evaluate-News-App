@@ -2,7 +2,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 const API_KEY = process.env.API_KEY;
 
-const port = 8080;
+const port = process.env.PORT || 8080 ;
 const shortURL = `https://api.meaningcloud.com/sentiment-2.1?key=${API_KEY}&lang=auto&url=`;
 
 const fetch = require('node-fetch')
