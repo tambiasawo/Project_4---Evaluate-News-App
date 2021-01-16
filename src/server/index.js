@@ -26,7 +26,7 @@ app.get('/', function(req, res){
 app.post('/call', APICall);
 
 async function APICall(req, res) {
-    const result = req.body;  
+    const result = req.body;   // result is form data
     const URL = shortURL + result;
     console.log('This url has been sent '+URL)
     const response = await fetch(URL)
@@ -35,7 +35,7 @@ async function APICall(req, res) {
         if(APIResults.status.code==0)
         {
             APIResults.message= "Proper Data Received";
-            res.send(APIResults);
+            res.send(APIResults); //this is what the data returns
         }
         else
         {

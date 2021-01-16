@@ -14,14 +14,12 @@ export async function handleSubmit(event) {
     if (!Client.checkURL(inputData)) {
         error.innerHTML = 'Invalid URL. Make sure your input starts with http:// or https:// and contain no spaces.'
         return
-    } 
-    else {   
-        getServerData('http://localhost:8080/call', inputData)
-            .then(result => result.json())
-            .then(function (res) {
-                updateUI(res)
-            })
-        }
+    }   
+    getServerData('http://localhost:8080/call', inputData)
+        .then(result => result.json())
+        .then(function (res) {
+            updateUI(res)
+        })
 }
 
 export async function getServerData(url, inputData) {
